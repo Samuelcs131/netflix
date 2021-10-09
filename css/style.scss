@@ -1,0 +1,266 @@
+/* RESET */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{ padding: 0; box-sizing: border-box; background: none; border: none; margin: 0; text-decoration: none; list-style: none; font-family: 'Roboto', sans-serif; color: white;}
+
+body{
+    background-color: rgb(15, 15, 15);
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* DEFAULT */
+ 
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #151515;  
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:  #888; 
+    border-radius: 20px; 
+    border: 2px solid #151515;  
+}
+
+.container{
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+
+.material-icons.black{
+    color: black;
+}
+
+.btn-default{
+    padding: 5px 15px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* NAV MENU */
+.navbar{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    color: white;
+    padding: 20px 0px;
+    user-select: none;
+    top: 0;
+    z-index: 1000;
+    transition: 0.2s;
+    position: fixed;
+    width: 100%;
+}
+
+.container-nav{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.nav-dark{
+    background-color: #151515f6;
+    transition: 0.6s;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+
+.nav-menu > li {
+    margin: 0 10px; 
+}
+
+.logo-menu{
+    margin-right: 25px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.logo-menu > img{
+    width: 100px;
+}
+
+.logo-and-menu{
+    display: flex;
+    align-items: center;
+}
+
+.search-and-profile{
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.search-and-profile > span {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.profile-user{
+    display: flex;
+    align-items: center;
+}
+
+.profile-user > img{
+    width: 25px;
+    border-radius: 2px;
+}
+
+
+
+/* CABECALHO */
+
+header{
+    background: url('../img/bk-viuva-negra.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.bk-gradiente-bottom{ 
+    position: absolute;
+    height: 100%;
+    width: 100%; 
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgb(15, 15, 15) 3%, rgba(0,0,0,0) 50%);
+}
+
+.bk-gradiente-top{ 
+    position: absolute;
+    height: 100%;
+    width: 100%; 
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 10%);
+}
+
+header::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%; 
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%);   
+}
+
+/* INFORMAÇÕES FILMES */
+.info-movie{
+    margin-top: 320px;
+    position: absolute;
+}
+
+.title-movie{
+    font-size: 50px;
+}
+
+.resume-movie{
+    margin-top: 20px;
+    max-width: 600px;
+    text-align: justify;
+    font-size: 19px;
+}
+ 
+.btn-play-movie{
+    background-color: white;
+    color: black;
+}
+.btn-play-movie > span {
+    margin-right: 7px;
+}
+
+.btn-more-info{
+    background-color: rgba(255, 255, 255, 0.37);
+}
+.btn-more-info > span {
+    margin-right: 7px;
+}
+
+.btn-group{
+    display: flex;
+    margin: 50px 0;
+    margin-top: 50px;
+}
+
+.btn-group > button{
+    margin-right: 15px;
+}
+
+
+/* CLASSIFICAÇÃO FILME */
+.movie-classification{
+    z-index: 1;
+    margin-top: 550px;
+    position: relative;
+    float: right;
+    width: 80px;
+    height: 30px;
+    background-color: rgba(65, 65, 65, 0.274);
+    display: flex;
+    align-items: center;
+} 
+
+.movie-classification::before{
+    content: '';
+    position: absolute;
+    width: 4%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.801);
+}
+
+.icon-classification{
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 30px;
+    border-radius: 2px;
+    padding: 2px 5px;
+    background-color: rgb(41, 41, 41);
+    font-weight: 500; 
+}
+/* BANNERS FILMES */
+
+
+
+.carousel-initial{
+    margin: 0 auto;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.carousel-initial > h1{
+    z-index: 1;
+    margin-bottom: 10px;
+}
+
+
+.carousel-container{
+    margin-top: 50px;
+}
+.carousel-container > h1{
+    z-index: 1;
+    margin-bottom: 10px;
+}
+
+
+
+/* RODAPE */
+
+footer{
+    background-color: #151515;
+    text-align: center;
+    margin-top: 80px;
+    padding: 20px 0;
+}
